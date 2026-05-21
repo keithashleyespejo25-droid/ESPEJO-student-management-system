@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="18.0" alignment="CENTER" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="espejo.student_management_system.controller.AuthController"
+      style="-fx-background-color: linear-gradient(to bottom right, #ffe6f0, #fff0f5);">
+
+    <padding>
+        <Insets top="40" right="40" bottom="40" left="40" />
+    </padding>
+
+    <children>
+
+        <Label text="PUPSRC Student Management System"
+               style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #d63384;" />
+
+        <Label text="Login to Continue"
+               style="-fx-font-size: 14px; -fx-text-fill: #8c5a72;" />
+
+        <TextField fx:id="usernameField"
+                   promptText="Username"
+                   maxWidth="300"
+                   prefHeight="42"
+                   style="-fx-background-color: white;
+                          -fx-background-radius: 14;
+                          -fx-border-radius: 14;
+                          -fx-border-color: #f3b6cc;
+                          -fx-border-width: 1.5;
+                          -fx-font-size: 14px;
+                          -fx-padding: 0 12 0 12;" />
+
+        <PasswordField fx:id="passwordField"
+                       promptText="Password"
+                       maxWidth="300"
+                       prefHeight="42"
+                       style="-fx-background-color: white;
+                              -fx-background-radius: 14;
+                              -fx-border-radius: 14;
+                              -fx-border-color: #f3b6cc;
+                              -fx-border-width: 1.5;
+                              -fx-font-size: 14px;
+                              -fx-padding: 0 12 0 12;" />
+
+        <Button text="Login"
+                onAction="#handleLogin"
+                maxWidth="300"
+                prefHeight="42"
+                style="-fx-background-color: #ff85a2;
+                       -fx-text-fill: white;
+                       -fx-font-size: 14px;
+                       -fx-font-weight: bold;
+                       -fx-background-radius: 14;
+                       -fx-cursor: hand;" />
+
+        <Button text="Sign Up"
+                onAction="#handleOpenSignUp"
+                maxWidth="300"
+                prefHeight="42"
+                style="-fx-background-color: white;
+                       -fx-text-fill: #d63384;
+                       -fx-font-size: 14px;
+                       -fx-font-weight: bold;
+                       -fx-background-radius: 14;
+                       -fx-border-color: #f3b6cc;
+                       -fx-border-radius: 14;
+                       -fx-cursor: hand;" />
+
+    </children>
+</VBox>
